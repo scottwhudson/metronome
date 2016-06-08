@@ -13,7 +13,10 @@ Using @cwilso's [HTML5 demo metronome](http://webaudiodemos.appspot.com/metronom
 
 Adding triplet note support was the trickiest, since it required converting the base note interval from a 16th note to a twelvelet, which contains both eighth note and sixteenth note intervals (thanks college drumline days).  The scheduler picks out the relevant subdivisions in the polyrhythm and mutes the rest. This worked way better than simultaneously scheduling duple subdivisions and triple subdivisions, especially with the variable tempo input.
 
-**NOTE:** I had run this locally using Firefox since Chrome doesn't like running web workers locally apparently.
+
+### Setup
+1. clone the repository
+2. open `index.html` using a broswer other than Chrome (Chrome doesn't like running web workers locally apparently)
 
 ### Todos
 * toggle note pitches
